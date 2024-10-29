@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>JSON</title>
+    </head>
+    <body>
+        <h1>CALLBACK FUNCTION</h1>
+        <h4 id="h4"></h4>
+        <script>
+            function display(value){
+                document.getElementById("h4").innerHTML=value;
+                
+            }
+            function calc(num1, num2, CALLBACK){
+                let sum= num1+num2;
+                CALLBACK(sum);
+
+            }
+            calc(24,98, display);
+        </script>
+        </body>
+        </html>
