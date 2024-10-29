@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>JSON</title>
+    </head>
+    <body>
+        <h1>CONVERTING OBJECTS TO STRING USING JSON</h1>
+        <h4 id="h4"></h4>
+        <script>
+            var myobj = {name:"Ibrahim", age:16, class:"grade 12"};
+            var myJSON = JSON.stringify(myobj);
+            var obj = JSON.parse(myJSON);
+            document.getElementById("h4").innerHTML=obj.name;
+            </script>
+    </body>
+    </html>
